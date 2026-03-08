@@ -1,10 +1,12 @@
-# GitHub Pages UI Upload Checklist
+# GitHub Pages UI Upload Checklist (Username-only)
 
-This folder is ready for GitHub UI upload.
+This folder is ready for GitHub UI upload **without buying/setting a custom domain**.
 
 ## 1) Create repository
-- Create a **public** GitHub repository named: `<your-github-username>.github.io`
-  - Example: `shaikhisrail.github.io`
+- Create a **public** GitHub repository named exactly:
+  - `shaikhmisrail.github.io`
+
+> This must match your GitHub username (`shaikhmisrail`).
 
 ## 2) Upload files using GitHub UI
 - Open the repo in browser
@@ -15,29 +17,21 @@ This folder is ready for GitHub UI upload.
 Required files in this folder:
 - `index.html`
 - `Shaikh_Israil_Resume.pdf`
-- `CNAME`
 
 ## 3) Enable Pages in UI
 - Repo **Settings → Pages**
 - Source: **Deploy from a branch**
 - Branch: `main` and `/ (root)`
 
-## 4) DNS records at registrar
-For apex domain (`shaikhisrail.me`) add A records:
-- `185.199.108.153`
-- `185.199.109.153`
-- `185.199.110.153`
-- `185.199.111.153`
-
-For `www` add CNAME:
-- `www` -> `<your-github-username>.github.io`
+## 4) Do NOT configure custom domain
+- In **Settings → Pages**, leave **Custom domain** empty
+- If there is an old custom domain value, remove it
 
 ## 5) Final checks
-- In GitHub Pages settings, verify custom domain shows `shaikhisrail.me`
-- Enable **Enforce HTTPS** once certificate is ready
-- Open:
-  - `https://shaikhisrail.me`
-  - `https://www.shaikhisrail.me`
+- Open your site at:
+  - `https://shaikhmisrail.github.io`
 - Click **View resume** and confirm PDF opens
 
-> If your final domain is different, edit the `CNAME` file before upload.
+---
+
+If you later want `shaikhisrail.me`, you can add a `CNAME` file and configure DNS.
